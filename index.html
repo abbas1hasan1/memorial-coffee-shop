@@ -115,17 +115,16 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-  color: var(--forest);
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
-.nav-logo .star { color: var(--gold); font-size: 1.1em; animation-duration: 10s; }
+.nav-logo svg {
+  width: 36px;
+  height: 36px;
+  fill: var(--forest);
+}
 
 .nav-links {
   display: flex;
@@ -584,7 +583,7 @@ img[src*="unsplash"] {
 
 <!-- ────── NAV ────── -->
 <nav>
-  <a href="#hero" class="nav-logo"><span class="star">✸</span> Memorial Coffee Shop</a>
+  <a href="#hero" class="nav-logo"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M5 10h18v1h2.5a3.5 3.5 0 0 1 0 7H23v1c0 3.3-2.7 6-6 6H11c-3.3 0-6-2.7-6-6V10zm18 6h2.5a1.5 1.5 0 0 0 0-3H23v3zM4 27h20a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"/></svg></a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
   <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
   <ul class="nav-links">
@@ -817,8 +816,7 @@ img[src*="unsplash"] {
       <p><span class="placeholder">[Phone Number]</span></p>
     </div>
     <p class="contact-note reveal reveal-delay-2">
-      Prepared for Greenside Memorial at 1085 Gessner Rd, Houston, TX 77055.<br>
-      Developed by MetroNational · Retail leasing by Radom Capital (Barton Kelly).
+      Prepared for Greenside Memorial at 1085 Gessner Rd, Houston, TX 77055.
     </p>
     <div class="star-sep reveal reveal-delay-3">
       <span class="star">✸</span>
